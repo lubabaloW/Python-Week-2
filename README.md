@@ -76,9 +76,26 @@ These varibles are called static because they dont change with each instance and
 
 #ERRORS AND EXCEPTIONS
 In python you will find that exceptions are determined during runtime and can be retried, whereas errors cannot be retried.
+Anything devided by zero results in a zero division error
+
+def causeError():
+  return 1/0
+
+def callCauseError():
+  return causeError()
+  
+callCauseError()
+//We extended the stack trace by creating a function called "callCauseError" which returns the "causeError" function, which we ofcourse called it.
+
 
 #TRY/ EXCEPTION
 try:
     1/0
 except Exception as e:
    print(type(e))
+
+
+
+
+
+   
