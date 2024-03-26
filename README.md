@@ -94,6 +94,31 @@ try:
 except Exception as e:
    print(type(e))
 
+#MULTITHREADING 
+def longsquare(num, results):
+    time.sleep(1)
+    results[num] = num**2
+
+results ={}
+t1 = threading.Thread(target=longSquare, args=(1,results))
+t1 = threading.Thread(target=longSquare, args=(1,results))
+
+t1.start()
+t1.start()
+
+t1.join()
+t1.join()
+
+print(results)
+
+//We use threads when waiting to fetch data from a remote server, the code is just sitting around doing nothing, waiting for data to come back. We can do all that waiting in parallel rather than one at a time.
+
+*Multithreading/ Multiprocessing difference
+
+
+
+   
+
 
 
 
