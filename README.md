@@ -33,6 +33,13 @@ _code_
 
 The "code" attribute of Python function objets can be used to confirm that functions are just variables in Python.
 
+#TEXT PROCESSING
+lowercase(text)  //
+removePancuation(text)  //
+removeNewlines(text)   //
+removeShortwords(text)  //
+removeLongwords(text)  //
+
 LAMBDA FUNCTION
 These are a way to represent a function without giving it a variable name.
 For example: x:x+3 is a lambda function that takes a single parameter x and returns x plus 3.
