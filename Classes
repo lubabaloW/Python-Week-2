@@ -1,0 +1,41 @@
+class Dog:
+  def __init__(self, name):
+     self.name = name
+     self.legs = 4
+  
+  def speak(self):
+     print(self.name + ' says: Bark!')
+
+myDog = Dog('Rover')
+print(myDog.name)
+print(myDog.legs)
+
+
+#Static Attributes
+class Dog:
+   legs = 4
+   def __init__(self, name):
+      self.name = name
+
+   def speak(self):
+      print(self.name + ' says: Bark!')
+
+myDog = Dog('Rover')
+print(myDog.name)
+print(myDog.legs)
+
+#Another class example
+'''class User:
+   def __init__(self, full_name, birthday):
+      self.name = full_name
+      self.birthday = birthday
+
+      name_pieces - full_name.split("")
+      self.first_name = name_pieces[0]
+      self.last_name = name_pieces[-1]
+
+
+user1 = User("Dave Bow", "199977")
+print(user1.first_name)
+print(user1.last_name)
+print(user1.birthday)'''
